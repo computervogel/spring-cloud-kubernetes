@@ -1,0 +1,295 @@
+{
+  "info": {
+    "name": "Travel and Discount Service API",
+    "description": "Collection of endpoints for Travel and Discount services"
+  },
+  "item": [
+    {
+      "name": "Discount Service",
+      "item": [
+        {
+          "name": "Get All Discounts",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/discount",
+            "description": "Get all discounts"
+          }
+        },
+        {
+          "name": "Get Discount by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/discount/{{discountId}}",
+            "description": "Get discount by ID",
+            "params": [
+              {
+                "key": "discountId",
+                "value": "",
+                "description": "Discount ID"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Create Discount",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/discount",
+            "description": "Create a new discount",
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Update Discount",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/discount/{{discountId}}",
+            "description": "Update discount by ID",
+            "params": [
+              {
+                "key": "discountId",
+                "value": "",
+                "description": "Discount ID"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Delete Discount",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/discount/{{discountId}}",
+            "description": "Delete discount by ID",
+            "params": [
+              {
+                "key": "discountId",
+                "value": "",
+                "description": "Discount ID"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Travel Service",
+      "item": [
+        {
+          "name": "Get All Clients",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/travel/clients",
+            "description": "Get all clients"
+          }
+        },
+        {
+          "name": "Get Client by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/travel/clients/{{clientId}}",
+            "description": "Get client by ID",
+            "params": [
+              {
+                "key": "clientId",
+                "value": "",
+                "description": "Client ID"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Create Client",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/travel/clients",
+            "description": "Create a new client",
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Update Client",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/travel/clients/{{clientId}}",
+            "description": "Update client by ID",
+            "params": [
+              {
+                "key": "clientId",
+                "value": "",
+                "description": "Client ID"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Delete Client",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/travel/clients/{{clientId}}",
+            "description": "Delete client by ID",
+            "params": [
+              {
+                "key": "clientId",
+                "value": "",
+                "description": "Client ID"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Get All Travels",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/travel/travels",
+            "description": "Get all travels"
+          }
+        },
+        {
+          "name": "Get Travel by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/travel/travels/{{travelId}}",
+            "description": "Get travel by ID",
+            "params": [
+              {
+                "key": "travelId",
+                "value": "",
+                "description": "Travel ID"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Create Travel",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/travel/travels",
+            "description": "Create a new travel",
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Update Travel",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/travel/travels/{{travelId}}",
+            "description": "Update travel by ID",
+            "params": [
+              {
+                "key": "travelId",
+                "value": "",
+                "description": "Travel ID"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Delete Travel",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/travel/travels/{{travelId}}",
+            "description": "Delete travel by ID",
+            "params": [
+              {
+                "key": "travelId",
+                "value": "",
+                "description": "Travel ID"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Get All Bookings",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/travel/bookings",
+            "description": "Get all bookings"
+          }
+        },
+        {
+          "name": "Get Booking by ID",
+          "request": {
+            "method": "GET",
+            "url": "http://localhost:8080/travel/bookings/{{bookingId}}",
+            "description": "Get booking by ID",
+            "params": [
+              {
+                "key": "bookingId",
+                "value": "",
+                "description": "Booking ID"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Create Booking",
+          "request": {
+            "method": "POST",
+            "url": "http://localhost:8080/travel/bookings",
+            "description": "Create a new booking",
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Update Booking",
+          "request": {
+            "method": "PUT",
+            "url": "http://localhost:8080/travel/bookings/{{bookingId}}",
+            "description": "Update booking by ID",
+            "params": [
+              {
+                "key": "bookingId",
+                "value": "",
+                "description": "Booking ID"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            }
+          }
+        },
+        {
+          "name": "Delete Booking",
+          "request": {
+            "method": "DELETE",
+            "url": "http://localhost:8080/travel/bookings/{{bookingId}}",
+            "description": "Delete booking by ID",
+            "params": [
+              {
+                "key": "bookingId",
+                "value": "",
+                "description": "Booking ID"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+
